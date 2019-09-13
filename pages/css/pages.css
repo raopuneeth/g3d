@@ -9981,6 +9981,7 @@ sup.dollar {
 	/* margin-bottom: 20px;*/
 	height:100px !important;
 	transition: all 0.5s ease-out;
+	align-self: flex-end;
 	
 }
 
@@ -10059,6 +10060,7 @@ sup.dollar {
 	
 	/* height: 25% !important; */
 	font-size: 16px;
+	align-self: flex-end;
 	
 }
 
@@ -10136,7 +10138,7 @@ sup.dollar {
 
 .main-button-container:hover {
 
-	height: 200px !important;
+	height: 350px !important;
 	
 }
 
