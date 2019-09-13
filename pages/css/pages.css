@@ -9917,7 +9917,7 @@ sup.dollar {
 
 .half-vh {
 
-	height: calc(100vh - 80px);
+	height: calc(50vh - 80px);
 	
 }
 
@@ -9927,27 +9927,38 @@ sup.dollar {
 
 .b-trans {
 
-	border: 4px solid #0d4a90;
+	border-right: 1px solid #fff; /*#0d4a90;*/
+	border-top: 1px solid #fff;
 	cursor: pointer;
 	
 }
 
 .hover-container:hover > .col-md-3 {
 
-	width: 15%;
-	transition: width 1s;
+	width: calc(15%);/*  - 20px); */
+	
+	transition: width 1s, height 1s;
 	
 }
 
 .border-hover:hover {
 	
-	width: 55% !important;
+	width: calc(55%) !important;/*  - 20px) !important; */
 	
 }
 
 .section-blue {
 
 	background-color: #0d4a90;
+	/*background-color: #ecf0f1;*/
+	/*background-image: url('../../assets/images/printed.jpg');*/
+	/* background-color:#269;
+	background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+	linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px),
+	linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px),
+	linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px);
+	background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+	background-position:-1px -1px, -1px -1px, -1px -1px, -1px -1px; */
 	
 }
 
@@ -9957,4 +9968,197 @@ sup.dollar {
 	
 }
 
+.product-sec {
+	
+	background: rgba(0,0,0,0);
+	background-size: 0px;
+	transition: color 1s;
+	color: #fff !important;
+	width: calc(25%);
+	/* margin-left: 10px;
+	margin-right: 10px; */
+	/* for square blocks */
+	/* margin-bottom: 20px;*/
+	height:100px !important;
+	transition: all 0.5s ease-out;
+	
+}
+
+.product-sec::before {
+	
+	content: "";
+	position: absolute;
+	top: 0; left: 0;
+	right:0; bottom:0;
+	width: 100%; height: 100%;
+	display: block;
+	/* background: #0d4a90; */
+	background: transparent;
+	
+	background-size: cover !important;
+	/* filter: grayscale(0%) blur(1px); */
+	opacity: 1;
+	z-index: -999;
+	
+	transition: all 0.5s ease-in;
+	background-position: -150px;
+	
+}
+
+.product-sec > h2 {
+
+	color: #000;
+	transition: all 0.5s ease-out;
+	/* text-align: center !important; */
+	padding-left: 0px;
+	
+	font-size: 16px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+}
+
+.product-sec > p {
+
+	text-align: left;
+	opacity: 0;
+	margin-left: 10px;
+	transition: opacity 1s ease-in;
+	color: #fff;
+	
+}
+
+.product-sec > p > a{
+
+	color: #fff;
+	
+}
+
+.product-sec > p:hover > a {
+	
+	text-decoration: underline;
+	
+}
+
+.product-sec > p:nth-child(2) {
+
+	margin-top: 20px;
+	
+}
+
+.product-sec:hover {
+
+	/* height:100% !important; */
+	height: 350px !important;
+	
+}
+
+.hover-container:hover  > .product-sec:not(:hover) {
+	
+	/* height: 25% !important; */
+	font-size: 16px;
+	
+}
+
+.product-sec:hover::before {
+
+	/* filter: grayscale(0%) blur(1px);
+	opacity: 1; */
+	/* transform: scale(1.1); */
+	background: #0d4a90;
+}
+
+.product-sec:hover > h2 {
+
+	/* color: #fff;
+	margin-top:10px;
+	text-align: left !important;
+	font-size: 16px;
+	margin-left: 20px; */
+	top:0px;
+	left:20px;
+	transform:translate(0%, 0%);
+	color: #fff;
+	
+}
+
+.product-sec:hover > p {
+
+	opacity: 1;
+	
+}
+
+.hover-container:hover  > .product-sec:not(:hover) > h2{
+	
+	/* height: 25% !important; */
+	font-size: 16px;
+	
+}
+
+.product-sec.prod:hover::before {
+
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../../assets/images/printing.jpg');
+	background-position: -150px;
+	
+}
+
+.product-sec.serv:hover::before {
+
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../../assets/images/house.jpg');
+	background-position: -150px;
+	
+}
+
+.product-sec.const:hover::before {
+
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../../assets/images/gallery_hero_2.jpg');
+	background-position: -150px;
+	
+}
+
+.product-sec.labs:hover::before {
+
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../../assets/images/printed.jpg');
+	background-position: -150px;
+	
+}
+
+.main-button-container {
+	
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	height: 100px !important;
+	
+}
+
+.main-button-container:hover {
+
+	height: 200px !important;
+	
+}
+
+.content-mask-md {
+
+	height: 500px;
+	margin-top: -100px;
+	text-align: center;
+	
+}
+
+.products-tab > li{
+	
+	display: inline-block !important;
+	zoom:1;
+	float: none !important;
+
+}
+
+.products-tab {
+
+	text-align: center;
+	
+}
 
