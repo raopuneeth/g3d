@@ -10100,29 +10100,30 @@ sup.dollar {
 }
 
 .product-sec.prod:hover::before {
-
-	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../../assets/images/printing.jpg');
-	background-position: -150px;
+	
+	background: #fff;
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../../assets/images/PRODUCTS.png');
+	background-position: 150px;
 	
 }
 
 .product-sec.serv:hover::before {
 
-	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../../assets/images/house.jpg');
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../../assets/images/img12.jpeg');
 	background-position: -150px;
 	
 }
 
 .product-sec.const:hover::before {
 
-	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../../assets/images/gallery_hero_2.jpg');
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../../assets/images/MANUFACUTRING_SOLN.jpg');
 	background-position: -150px;
 	
 }
 
 .product-sec.labs:hover::before {
 
-	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../../assets/images/printed.jpg');
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../../assets/images/LABS.jpg');
 	background-position: -150px;
 	
 }
@@ -10145,7 +10146,7 @@ sup.dollar {
 .content-mask-md {
 
 	height: 500px;
-	margin-top: -100px;
+	margin-top: -50px;
 	text-align: center;
 	
 }
@@ -10163,4 +10164,50 @@ sup.dollar {
 	text-align: center;
 	
 }
+
+.clients .row {
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+
+.clients img {
+
+	max-width: 100% !important;
+	max-height: 120px !important;
+	vertical-align: middle !important;
+	
+}
+
+.clients .col-md-3 {
+
+	height: 120px;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.flexrow {
+
+	padding: 0px !important;
+	
+	/* flex-direction: column; */
+	
+}
+
+/* .transparent-light .menu {
+
+	opacity: 0 !important;
+	
+}
+
+.transparent-light.minimized .menu {
+
+	opacity: 1 !important;
+	
+} */
 
